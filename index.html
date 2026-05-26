@@ -35,6 +35,49 @@
             margin: 0 auto;
             padding: 0 20px;
         }
+        /* ===== IMAGE STYLES ===== */
+        /* Make images responsive and add rounded corners */
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 6px;
+        }
+        /* ===== HEADER SECTION ===== */
+        /* Sticky header stays at top when scrolling */
+        header {
+            border-bottom: 1px solid var(--border-gray);
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            background: var(--white);
+            z-index: 100;
+        }
+
+        /* Flexbox layout for logo and nav */
+        .nav-wrap {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+        .logo {
+            font-weight: bold;
+            font-size: 1.2rem;
+            letter-spacing: 1px;
+        }
+        nav {
+            display: flex;
+            gap: 25px;
+        }
+        nav a {
+            text-decoration: none;
+            color: var(--black);
+            font-weight: 500;
+        }
+        nav a:hover {
+            color: var(--red); /* Highlight link on hover */
+        }
     </style>
 </head>
 <body>
