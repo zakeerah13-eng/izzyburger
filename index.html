@@ -78,6 +78,35 @@
         nav a:hover {
             color: var(--red); /* Highlight link on hover */
         }
+        /* ===== BUTTON STYLES ===== */
+        /* Reusable button classes for consistent look */
+        .btn {
+            padding: 10px 18px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+            transition: 0.2s ease;
+        }
+        .btn-red {
+            background: var(--red);
+            color: var(--white);
+        }
+        .btn-red:hover {
+            opacity: 0.9;
+        }
+        .btn-outline {
+            background: transparent;
+            border: 1px solid var(--black);
+            color: var(--black);
+        }
+        .btn-outline:hover {
+            background: var(--black);
+            color: var(--white);
+        }
     </style>
 </head>
 <body>
