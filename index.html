@@ -170,6 +170,62 @@
             object-fit: cover; /* Crop image to fit nicely */
             margin-bottom: 12px;
         }
+        /* ===== PROMOTIONS SECTION ===== */
+        /* Simple box for special offers */
+        .promotions {
+            padding: 40px 0 80px;
+        }
+        .banner-box {
+            border: 1px dashed var(--border-gray);
+            padding: 25px;
+            text-align: center;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            background: var(--white);
+        }
+        /* ===== FOOTER SECTION ===== */
+        /* Dark footer with grid layout for links */
+        footer {
+            background: var(--black);
+            color: var(--white);
+            padding: 60px 0 20px;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 35px;
+            margin-bottom: 40px;
+        }
+        footer a {
+            color: #bbb;
+            text-decoration: none;
+            display: block;
+            margin: 6px 0;
+        }
+        footer a:hover {
+            color: var(--white);
+        }
+        .footer-bottom {
+            text-align: center;
+            border-top: 1px solid #333;
+            padding-top: 20px;
+            font-size: 0.9rem;
+            color: #aaa;
+        }
+        /* ===== RESPONSIVE DESIGN ===== */
+        /* Adjust layout for tablets and phones */
+        @media (max-width: 768px) {
+        .hero-text h1 {
+            font-size: 2rem;
+        }
+        nav {
+            display: none; /* Hide nav on mobile for simplicity */
+        }
+        .hero-buttons {
+            justify-content: center;
+        }
+        }
     </style>
 </head>
 <body>
