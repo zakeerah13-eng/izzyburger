@@ -4,6 +4,154 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About | Izzy Burger</title>
+    <style>
+       /* ===== CSS VARIABLES ===== */
+        /* Define brand colors once so they can be updated easily across the whole site */
+        :root {
+            --red: #e63946; /* Primary brand color for buttons */
+            --black: #1d1d1d; /* Main text and footer background */
+            --white: #ffffff; /* Background color */
+            --border-gray: #ddd; /* Borders and dividers */
+            --light-gray: #fafafa; /* Section background for contrast */
+        }
+
+        /* ===== RESET STYLES ===== */
+        /* Remove default browser margins and set box-sizing for consistent layout */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: var(--black);
+            background: var(--white);
+            line-height: 1.7; /* Better readability for paragraph text */
+        }
+        a { text-decoration: none; color: inherit; }
+
+        /* ===== LAYOUT CONTAINER ===== */
+        /* Centers content and limits width on large screens for readability */
+        .container { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
+
+        /* ===== HEADER SECTION ===== */
+        /* Sticky header stays at top when scrolling. High z-index keeps it above content */
+        header {
+            border-bottom: 1px solid var(--border-gray);
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            background: var(--white);
+            z-index: 100;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05); /* Subtle shadow for depth */
+        }
+
+        /* Flexbox layout for logo and navigation */
+        .nav-wrap {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+        .logo {
+            font-weight: bold;
+            font-size: 1.3rem;
+            letter-spacing: 1px;
+        }
+
+        /* Navigation links in a horizontal row */
+        nav { display: flex; gap: 30px; }
+        nav a {
+            font-weight: 500;
+            transition: color 0.2s; /* Smooth color change on hover */
+        }
+        nav a:hover { color: var(--red); } /* Brand color on hover for feedback */
+
+        /* ===== BUTTON STYLES ===== */
+        /* Reusable button class for consistent styling */
+        .btn {
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-weight: bold;
+            display: inline-block;
+            transition: all 0.2s ease;
+            cursor: pointer;
+            border: none;
+        }
+
+        /* Primary button - red background for main CTA */
+        .btn-red { background: var(--red); color: var(--white); }
+        .btn-red:hover {
+            opacity: 0.9;
+            transform: translateY(-2px); /* Lift effect on hover */
+        }
+
+        /* ===== ABOUT SECTION ===== */
+        /* Main content area with generous padding for breathing room */
+        .about-section { padding: 100px 0; }
+        .about-section h1 {
+            font-size: 2.8rem;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        /* Centered paragraph with max-width for optimal reading length */
+        .about-section p {
+            font-size: 1.15rem;
+            max-width: 800px;
+            margin: 0 auto; /* Centers the paragraph */
+            color: #444;
+            text-align: center;
+        }
+
+        /* ===== FOOTER SECTION ===== */
+        /* Dark background for contrast with main content */
+        footer {
+            background: var(--black);
+            color: var(--white);
+            padding: 60px 0 20px;
+        }
+        footer h2 { margin-bottom: 30px; font-size: 1.5rem; }
+
+        /* Grid layout for footer columns - auto-adjusts on mobile */
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+        footer h3 { margin-bottom: 15px; font-size: 1.1rem; }
+
+        /* Footer links with lighter color and hover effect */
+        footer a {
+            color: #bbb;
+            display: block;
+            margin: 8px 0;
+            transition: color 0.2s;
+        }
+        footer a:hover { color: var(--white); }
+
+        /* Newsletter input field */
+        footer input[type="email"] {
+            padding: 10px;
+            width: 100%;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 4px;
+        }
+
+        /* Bottom bar with copyright info */
+        .footer-bottom {
+            text-align: center;
+            border-top: 1px solid #333; /* Separator line */
+            padding-top: 25px;
+            font-size: 0.9rem;
+            color: #aaa;
+        }
+
+        /* ===== RESPONSIVE DESIGN ===== */
+        /* Adjust layout for tablets and phones */
+        @media (max-width: 768px) {
+        .about-section h1 { font-size: 2.2rem; }
+        nav { display: none; } /* Hide nav on mobile for simplicity */
+        } 
+    </style>
 </head>
 <body>
     <header>
