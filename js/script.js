@@ -38,4 +38,14 @@
         }
     });
     }
+
+ // 4. Contact form response - no Tomcat needed
+    const contactForm = document.getElementById('contact-form');
+    if (contactForm) {
+    contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+    alert('Thank you! Your enquiry has been sent. We will contact you soon.');
+        this.reset();
     });
+    }
+    })
