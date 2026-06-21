@@ -33,7 +33,7 @@ This is Part 1 of the Izzy Burger website project. It is a static website for a 
 - Week 11 & 12: Phase 3- Final improvements
 
 
-## Part 1 Details
+## Part 1,2,3 Details
 Part 1 covers the basic structure and static content of the website. Part 2 and Part 3 will add advanced styling, responsiveness, and functionality in future submissions.
 
 ## Sitemap
