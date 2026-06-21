@@ -43,6 +43,7 @@ Home → Menu → About → Contact → Order Now
 - 26/04/2026: Created initial HTML structure and added about.html content
 - 26/04/2026: Added README.md file with project documentation
 - 29/05/2026: Added external 'style.css', removed inline styles, implemented responsive layout, updated all HTML files to link stylesheet
+- 21/06/2026: Contact form uses JS alert for user feedback. Email backend requires Tomcat which was not completed due to time constraints. Site fully functional client-side
 
 ## References
 - Burger images:- https://www.instagram.com/theizzyburger/ 
